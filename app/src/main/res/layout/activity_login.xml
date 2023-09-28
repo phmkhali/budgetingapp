@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="65dp"
+    android:background="@color/colorBG"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Budget Tracker"
+        android:textSize="36dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textSubheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Track your expenses."
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textHeader"
+        />
+
+    <LinearLayout
+        android:id="@+id/linlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:hint="E-Mail"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimary" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgCash"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/linlayout"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/imgcash" />
+
+
+</RelativeLayout>

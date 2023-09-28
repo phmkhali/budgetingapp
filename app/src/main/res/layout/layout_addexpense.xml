@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="3dp"
+        android:text="Select Budget"
+        android:textColor="@android:color/black"
+        android:textStyle="bold
+"></TextView>
+
+    <Spinner
+        android:id="@+id/chooseBudget"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:singleLine="true"
+        android:textSize="12dp"> </Spinner>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="3dp"
+        android:paddingTop="5dp"
+        android:text="Amount"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/editExpenseAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="How much did you spend?"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="3dp"
+        android:text="Expense description"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold
+"></TextView>
+
+    <EditText
+        android:id="@+id/editExpenseDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="What did you spend your money on? (optional)"
+        android:lines="1"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="12dp"></EditText>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <!-- box -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="10dp">
+
+        <!-- texts -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat">
+
+            <TextView
+                android:id="@+id/expenseBudgetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="budget name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/expenseDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="3dp"
+                android:text="Description"
+                android:textSize="12dp"></TextView>
+
+
+            <TextView
+                android:id="@+id/expenseAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expenseBudgetName"
+                android:layout_marginTop="3dp"
+                android:text="-00,00 €"
+                android:textColor="#8b0000"
+                android:textSize="13dp"></TextView>
+
+            <TextView
+                android:id="@+id/expenseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expenseBudgetName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="3dp"
+                android:text="01.01.2023"
+                android:textSize="12dp"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

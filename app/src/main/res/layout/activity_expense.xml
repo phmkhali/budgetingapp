@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    tools:context=".ExpenseActivity">
+
+    <!-- top bar -->
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expenses"
+            android:textSize="52px"
+            android:textColor="@android:color/black"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/menu">
+        </ImageButton>
+    </RelativeLayout>
+
+    <!-- content box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bot"
+        android:orientation="vertical"
+        android:layout_below="@id/top"
+        android:layout_marginHorizontal="20dp">
+
+        <ListView
+            android:id="@+id/lv_expense"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            tools:listitem="@layout/listitem_expense"
+            android:divider="@null"
+            />
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You haven't added any expenses yet. Begin by creating a budget first."
+            android:textSize="30px"/>
+
+    </LinearLayout>
+
+    <!-- bottom bar -->
+    <LinearLayout
+        android:id="@+id/bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton"
+                android:text="Budget"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="-5dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="+"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/btnExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Expenses"
+                android:textColor="@android:color/white"
+                android:textSize="13dp"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgPlants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/plants"></ImageView>
+    </LinearLayout>
+
+</RelativeLayout>

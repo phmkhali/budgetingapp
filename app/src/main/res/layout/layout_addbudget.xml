@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="3dp"
+        android:text="Budget name"
+        android:textColor="@android:color/black"
+        android:textStyle="bold
+"></TextView>
+
+    <EditText
+        android:id="@+id/editBudgetName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="What's your budget for?"
+        android:lines="1"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:textSize="12dp"></EditText>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="3dp"
+        android:paddingTop="5dp"
+        android:text="Amount"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="What's your limit?"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="3dp"
+        android:paddingTop="5dp"
+        android:text="End Date"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="When is it due?"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="12dp"></EditText>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="3dp"
+        android:paddingTop="6dp"
+        android:text="Your budget will be deleted once the end date is reached!"
+        android:textSize="11dp"
+        android:textColor="@android:color/black"></TextView>
+
+
+</LinearLayout>
